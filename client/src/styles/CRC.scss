@@ -1,0 +1,70 @@
+#card-list{
+  padding: 3% 10%;
+}
+
+h1 {
+  text-align: center;
+}
+
+form, .card {
+  border: 1px solid grey;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+form input {
+  padding: 4px 8px;
+  flex-grow: 1;
+  margin-right: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.button__add{
+  margin-top: 15px;
+}
+
+button {
+  font-size: 16px;
+  background-color: rgb(217, 60, 35);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(173, 47, 28);
+}
+button:active {
+  background-color: rgb(130,35,21);
+}
+button:focus {
+  outline: 0;
+}
+input[type='text'] { 
+  font-size: 20px;
+  font-family: monospace; 
+}
+
+.card-text input {
+  padding: 4px;
+}
+.card-text {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+}

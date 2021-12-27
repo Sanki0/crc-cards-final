@@ -1,9 +1,10 @@
 import React from 'react'
+import '../../../styles/Home.scss'
 
 function LandingPage() {
     return (
         <>
-            <div className="app">
+            <div className="Home">
                 <h1 className="Home-title">CRC cards Generator</h1>
                 <div className="Home-descripcion">
                     aqui va una descripcion del proyecto

@@ -21,6 +21,10 @@ function LoginPage(props) {
 
   const initialEmail = localStorage.getItem("rememberMe") ? localStorage.getItem("rememberMe") : '';
 
+  const GoProjects = (e) => {
+    window.location.href = '/projects'
+  }
+
   return (
     <Formik
       initialValues={{
@@ -128,11 +132,11 @@ function LoginPage(props) {
                 <Checkbox id="rememberMe" onChange={handleRememberMe} checked={rememberMe} >Remember me</Checkbox>
                 <a className="login-form-forgot" href="/reset_user" style={{ float: 'right' }}>
                   forgot password
-                  </a>
+                </a>
                 <div>
-                  <Button type="primary" htmlType="submit" className="login-form-button" style={{ minWidth: '100%' }} disabled={isSubmitting} onSubmit={handleSubmit}>
+                  <Button onClick={GoProjects} type="primary" htmlType="submit" className="login-form-button" style={{ minWidth: '100%' }} disabled={isSubmitting} onSubmit={handleSubmit}>
                     Log in
-                </Button>
+                  </Button>
                 </div>
                 Or <a href="/register">register now!</a>
               </Form.Item>
