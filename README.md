@@ -15,7 +15,11 @@ To use this application,
 3. Type  " npm install " inside the root directory  ( Download Server Dependencies ) 
 4. Type " npm install " inside the client directory ( Download Front-end Dependencies )
 
-
+![alt text](https://i.ibb.co/myZXf72/signup.png)
+![alt text](https://i.ibb.co/W2LY2WC/login.png)
+![alt text](https://i.ibb.co/2gV4Ty0/new-project.png)
+![alt text](https://i.ibb.co/PNfWQQ7/create-card.png)
+![alt text](https://i.ibb.co/fYvxyX3/mongodb.png)
 
 
 
