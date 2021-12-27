@@ -33,6 +33,10 @@ function Projects() {
     setProjects([...projects].concat(project));
     setNewProject("");
   }
+  const deleteProject = (id) => {
+    let updateProjects = [...projects].filter((project) => project.id !== id);
+    setProjects(updateProjects);
+  }
 
 
   return (
@@ -54,6 +58,7 @@ function Projects() {
 
             <div key={project.id} className='project_name'>
               <input type="button" value={project.text} onClick={GoCRC} />
+              <button className='delete_btn' onClick={() => deleteProject(project.id)}>Delete</button>
             </div>
           ))}
         </div>
